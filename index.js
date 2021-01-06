@@ -1,10 +1,11 @@
 // import in node
 const express = require("express");
-const dotenv = require('dotenv')
+// const dotenv = require('dotenv')
 const server = express();
 const axios = require('axios')
-dotenv.config()
-const url = `https://maps.googleapis.com/maps/api/place/details/json?place_id=ChIJWQk4cPY8TIYRA7pjwdGTwZY&fields=user_ratings_total&key=${process.env.API_KEY}`
+// dotenv.config()
+// const url = `https://maps.googleapis.com/maps/api/place/details/json?place_id=ChIJWQk4cPY8TIYRA7pjwdGTwZY&fields=user_ratings_total&key=${process.env.API_KEY}`
+const url = `https://maps.googleapis.com/maps/api/place/details/json?place_id=ChIJWQk4cPY8TIYRA7pjwdGTwZY&fields=user_ratings_total&key=AIzaSyCzndoUwj4yZXArQqwQispPnWrsRTGK7mc`
 
 server.use(express.json());
 
